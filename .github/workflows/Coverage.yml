@@ -23,7 +23,7 @@ jobs:
          - run: npm install
          - run: npm test -- --coverage
          - name: Jest Coverage Report
-           uses: ArtiomTr/jest-coverage-report-actionv2
+           uses: ArtiomTr/jest-coverage-report-action@v2
            if: github.event_name == 'pull_request'
            with:
             github-token: ${{ secrets.GITHUB_TOKEN }}
